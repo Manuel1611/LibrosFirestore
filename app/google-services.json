@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "635275173430",
+    "project_id": "librosfirestore",
+    "storage_bucket": "librosfirestore.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:635275173430:android:870cdc4dd2e948b77b0297",
+        "android_client_info": {
+          "package_name": "com.example.librosfirestore"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "635275173430-29e03r521ugijn3icosh2iqm8n7s83gs.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCQIoknuU_qSMrX4_ujmDqeSG9jaVKmTP4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "635275173430-29e03r521ugijn3icosh2iqm8n7s83gs.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

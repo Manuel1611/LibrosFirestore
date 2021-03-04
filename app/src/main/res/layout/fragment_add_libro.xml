@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FEE4B3"
+    tools:context=".view.fragment.AddLibroFrag">
+
+    <Button
+        android:id="@+id/btVolverAddLibroFrag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="16dp"
+        android:fontFamily="@font/schoolbell"
+        android:text="@string/textVolver"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btAddLibro2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:fontFamily="@font/schoolbell"
+        android:text="@string/textAdd"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <EditText
+        android:id="@+id/etTituloLibroAdd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:autofillHints=""
+        android:background="@drawable/edittext_bg"
+        android:ems="10"
+        android:fontFamily="@font/schoolbell"
+        android:hint="@string/textTitulo"
+        android:inputType="textPersonName"
+        android:maxLength="25"
+        android:padding="12dp"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toTopOf="@+id/etEditorialLibroAdd"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+    <EditText
+        android:id="@+id/etEditorialLibroAdd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:autofillHints=""
+        android:background="@drawable/edittext_bg"
+        android:ems="10"
+        android:fontFamily="@font/schoolbell"
+        android:hint="@string/textEditorial"
+        android:inputType="textPersonName"
+        android:maxLength="25"
+        android:padding="12dp"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toTopOf="@+id/etPaginasLibroAdd"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etTituloLibroAdd" />
+
+    <EditText
+        android:id="@+id/etPaginasLibroAdd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:autofillHints=""
+        android:background="@drawable/edittext_bg"
+        android:ems="10"
+        android:fontFamily="@font/schoolbell"
+        android:hint="@string/textPaginas"
+        android:inputType="number"
+        android:maxLength="6"
+        android:padding="12dp"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toTopOf="@+id/etAutorLibroAdd"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etEditorialLibroAdd" />
+
+    <EditText
+        android:id="@+id/etAutorLibroAdd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:autofillHints=""
+        android:background="@drawable/edittext_bg"
+        android:ems="10"
+        android:fontFamily="@font/schoolbell"
+        android:hint="@string/textAutor"
+        android:inputType="textPersonName"
+        android:maxLength="50"
+        android:padding="12dp"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toTopOf="@+id/etUrlLibroAdd"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etPaginasLibroAdd" />
+
+    <EditText
+        android:id="@+id/etUrlLibroAdd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:autofillHints=""
+        android:background="@drawable/edittext_bg"
+        android:ems="10"
+        android:fontFamily="@font/schoolbell"
+        android:hint="@string/textUrl"
+        android:inputType="textPersonName"
+        android:maxLength="200"
+        android:padding="12dp"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toTopOf="@+id/btVolverAddLibroFrag"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etAutorLibroAdd" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:fontFamily="@font/schoolbell"
+        android:text="@string/textAddUnLibro"
+        android:textAlignment="center"
+        android:textColor="#472C06"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/etTituloLibroAdd"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvAlertaAddLibro"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:fontFamily="@font/schoolbell"
+        android:textAlignment="center"
+        android:textColor="#f00"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

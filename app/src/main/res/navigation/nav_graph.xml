@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/loginFrag">
+
+    <fragment
+        android:id="@+id/inicioFrag"
+        android:name="com.example.librosfirestore.view.fragment.InicioFrag"
+        android:label="fragment_inicio"
+        tools:layout="@layout/fragment_inicio" >
+        <action
+            android:id="@+id/action_inicioFrag_to_librosFrag"
+            app:destination="@id/librosFrag" />
+        <action
+            android:id="@+id/action_inicioFrag_to_ventasFrag"
+            app:destination="@id/ventasFrag" />
+    </fragment>
+    <fragment
+        android:id="@+id/loginFrag"
+        android:name="com.example.librosfirestore.view.fragment.LoginFrag"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login" >
+        <action
+            android:id="@+id/action_loginFrag_to_inicioFrag"
+            app:destination="@id/inicioFrag" />
+    </fragment>
+    <fragment
+        android:id="@+id/librosFrag"
+        android:name="com.example.librosfirestore.view.fragment.LibrosFrag"
+        android:label="fragment_libros"
+        tools:layout="@layout/fragment_libros" >
+        <action
+            android:id="@+id/action_librosFrag_to_inicioFrag"
+            app:destination="@id/inicioFrag" />
+        <action
+            android:id="@+id/action_librosFrag_to_addLibroFrag"
+            app:destination="@id/addLibroFrag" />
+        <action
+            android:id="@+id/action_librosFrag_to_editLibroFrag"
+            app:destination="@id/editLibroFrag" />
+    </fragment>
+    <fragment
+        android:id="@+id/addLibroFrag"
+        android:name="com.example.librosfirestore.view.fragment.AddLibroFrag"
+        android:label="fragment_add_libro"
+        tools:layout="@layout/fragment_add_libro" >
+        <action
+            android:id="@+id/action_addLibroFrag_to_librosFrag"
+            app:destination="@id/librosFrag" />
+    </fragment>
+    <fragment
+        android:id="@+id/editLibroFrag"
+        android:name="com.example.librosfirestore.view.fragment.EditLibroFrag"
+        android:label="fragment_edit_libro"
+        tools:layout="@layout/fragment_edit_libro" >
+        <action
+            android:id="@+id/action_editLibroFrag_to_librosFrag"
+            app:destination="@id/librosFrag" />
+    </fragment>
+    <fragment
+        android:id="@+id/ventasFrag"
+        android:name="com.example.librosfirestore.view.fragment.VentasFrag"
+        android:label="fragment_ventas"
+        tools:layout="@layout/fragment_ventas" >
+        <action
+            android:id="@+id/action_ventasFrag_to_inicioFrag"
+            app:destination="@id/inicioFrag" />
+        <action
+            android:id="@+id/action_ventasFrag_to_addVentaFrag"
+            app:destination="@id/addVentaFrag" />
+    </fragment>
+    <fragment
+        android:id="@+id/addVentaFrag"
+        android:name="com.example.librosfirestore.view.fragment.AddVentaFrag"
+        android:label="fragment_add_venta"
+        tools:layout="@layout/fragment_add_venta" >
+        <action
+            android:id="@+id/action_addVentaFrag_to_ventasFrag"
+            app:destination="@id/ventasFrag" />
+    </fragment>
+</navigation>

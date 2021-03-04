@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">LibrosFirestore</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="textVender">Vender</string>
+    <string name="textLibros">Libros</string>
+    <string name="textBienvenido">Bienvenido a la venta de libros</string>
+    <string name="hintCorreo">Correo electrónico</string>
+    <string name="hintPassword">Contraseña</string>
+    <string name="textEntrar">Entrar</string>
+    <string name="textTienesQueRellenarTodosLosCampos">Tienes que rellenar todos los campos</string>
+    <string name="textErrorIniciarSesion">Error al iniciar sesión</string>
+    <string name="textAddLibro">Añadir libro</string>
+    <string name="textVolver">Volver</string>
+    <string name="contLibro">Libro</string>
+    <string name="textAdd">Añadir</string>
+    <string name="textTitulo">Título</string>
+    <string name="textEditorial">Editorial</string>
+    <string name="textPaginas">Páginas</string>
+    <string name="textAutor">Autor</string>
+    <string name="textUrl">URL de la imagen</string>
+    <string name="textAddUnLibro">Añade un libro</string>
+    <string name="textEditar">Editar</string>
+    <string name="textEditaBorraLibro">Edita/borra un libro</string>
+    <string name="textBorrar">Borrar libro</string>
+    <string name="textSeleccionaCualQuieresVender">Selecciona el libro que quieres vender</string>
+    <string name="textNoSePuedeVenderPorqueNoHay">No se puede vender ningún libro porque no existe ninguno</string>
+    <string name="textVendeEsteLibro">Vende este libro</string>
+    <string name="textPrecio">Precio de venta</string>
+</resources>

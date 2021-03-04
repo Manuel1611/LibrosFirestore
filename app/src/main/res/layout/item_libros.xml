@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/consLibros"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <View
+        android:id="@+id/view2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/item_bg"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imgLibro"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="16dp"
+        android:contentDescription="@string/contLibro"
+        app:layout_constraintBottom_toBottomOf="@+id/tvNumVentasLibro"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tvTituloLibro" />
+
+    <TextView
+        android:id="@+id/tvTituloLibro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/schoolbell"
+        android:textColor="#472C06"
+        app:layout_constraintStart_toEndOf="@+id/imgLibro"
+        app:layout_constraintTop_toTopOf="@id/view2"
+        tools:text="Título" />
+
+    <TextView
+        android:id="@+id/tvEditorialLibro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/schoolbell"
+        android:textColor="#472C06"
+        app:layout_constraintStart_toEndOf="@+id/imgLibro"
+        app:layout_constraintTop_toBottomOf="@+id/tvTituloLibro"
+        tools:text="Editorial" />
+
+    <TextView
+        android:id="@+id/tvPaginasLibro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/schoolbell"
+        android:textColor="#472C06"
+        app:layout_constraintStart_toEndOf="@+id/imgLibro"
+        app:layout_constraintTop_toBottomOf="@+id/tvEditorialLibro"
+        tools:text="Páginas" />
+
+    <TextView
+        android:id="@+id/tvAutorLibro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/schoolbell"
+        android:textColor="#472C06"
+        app:layout_constraintStart_toEndOf="@+id/imgLibro"
+        app:layout_constraintTop_toBottomOf="@+id/tvPaginasLibro"
+        tools:text="Autor" />
+
+    <TextView
+        android:id="@+id/tvNumVentasLibro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:fontFamily="@font/schoolbell"
+        android:textColor="#472C06"
+        app:layout_constraintBottom_toBottomOf="@id/view2"
+        app:layout_constraintStart_toEndOf="@+id/imgLibro"
+        app:layout_constraintTop_toBottomOf="@+id/tvAutorLibro"
+        tools:text="Número de ventas" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
